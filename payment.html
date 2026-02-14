@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="my.css">
+    <title> قسم الشراء</title>
+</head>
+
+</html>
+<body>
+
+    <!-- الهيدر -->
+   <header class="first"> 
+    <h2>اهلا بك عزيزي في قسم الشراء</h2> 
+    <h3>شكرا ل اختيارك متجر لوف فيب وفرنا لك طرق دفع مختلفه</h3> 
+    <p>نمتى ان تكون تجربتك ممتعه شاكرين اختايركم راجين عودتكم</p>
+   </header> 
+   <nav class="links">
+    <ul>
+      <li><a href="vapes.html" target="_blank">الفيبات</a></li>
+      <li><a href="sahba.html" target="_blank">السحبات</a></li> 
+      <li><a href="store.html" target="_blank">الصفحه الرئيسيه</a></li> 
+      <li><a href="cigar.html" target="_blank">السيكار والجكاير</a></li> 
+      <li><a href="add.html" target="_blank">جوسات وملحقات </a></li>
+    </ul>
+</nav> 
+  
+    <!-- الفورم -->
+    <form class="order-form">
+  
+      <!-- حقل -->
+      <div class="form-group">
+        <label for="name">ادخل اسمك عزيزي</label>
+        <input id="name" type="text" placeholder="اسمك" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="tel">ادخل رقم هاتفك عزيزي</label>
+        <input id="tel" type="tel" placeholder="رقم هاتفك"
+          maxlength="11" pattern="[0-9]{10,11}" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="product">ادخل اسم المنتج</label>
+        <input id="product" type="text" placeholder="اسم المنتج" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="date">ادخل تاريخ شراء المنتج</label>
+        <input id="date" type="date" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="city">اختر المحافظة</label>
+        <select id="city" name="city" required>
+          <option value="">-- اختر محافظتك --</option>
+          <option>بغداد</option>
+          <option>البصرة</option>
+          <option>النجف</option>
+          <option>كربلاء</option>
+          <option>أربيل</option>
+          <option>دهوك</option>
+          <option>السليمانية</option>
+          <option>نينوى</option>
+          <option>الأنبار</option>
+          <option>ذي قار</option>
+          <option>ميسان</option>
+          <option>واسط</option>
+          <option>بابل</option>
+          <option>ديالى</option>
+          <option>كركوك</option>
+          <option>صلاح الدين</option>
+          <option>الديوانية</option>
+          <option>المثنى</option>
+        </select>
+      </div>
+  
+      <!-- طرق الدفع -->
+      <div class="payment-section">
+        <h2 class="payment-title">وفرنالك اكثر من طريقه دفع</h2>
+        <p class="payment-note"><b>اهمشي عدنه مزاجك وجيبك</b></p>
+  
+        <div class="payment-option">
+          <input type="radio" id="master" name="payment" required>
+          <label for="master">ماستر كارد</label>
+        </div>
+  
+        <div class="payment-option">
+          <input type="radio" id="asiapay" name="payment">
+          <label for="asiapay">آسيا باي</label>
+        </div>
+  
+        <div class="payment-option">
+          <input type="radio" id="afterpay" name="payment">
+          <label for="afterpay">الدفع عند الاستلام</label>
+        </div>
+      </div>
+  
+      
+      <div class="form-actions">
+        <input type="submit" value="إرسال الطلب">
+        <input type="reset" value="مسح">
+      </div>
+  
+    </form>
+  
+
+    <h2 class="thank-you">شكرا عله تسوقكم منا راجين عودتكم</h2>
+  
+    
+    <footer class="page-footer">
+      <h3>تابعني عله مواقع التواصل</h3>
+  
+   
+      <div class="social">
+       
+        <a href="https://www.instagram.com/jaafe_r880/" target="_blank">
+            <img src="intaa.png" alt="instagram" class="platform">
+        </a>
+    </div>
+
+    <div class="social">
+        <span class="aa"> </span>
+        <a href="https://www.tiktok.com/@jaafer8800" target="_blank">
+            <img src="tiktok.png" alt="tiktok" class="platform">
+        </a>
+    </div>
+    </footer>
+  
+  </body>
+  

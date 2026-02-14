@@ -1,0 +1,267 @@
+/* إعدادات عامة */
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+
+  background:
+    radial-gradient(
+      circle at top right,
+      rgba(121, 47, 108, 0.25),
+      transparent 60%
+    ),
+    linear-gradient(
+      to right top,
+      rgb(50, 5, 50),
+      rgb(30, 10, 30)
+    );
+
+  font-family: Arial, sans-serif;
+  color: #f4b6f4;
+  text-align: center;
+  line-height: 1.6;
+}
+
+/* الهيدر */
+.first {
+  max-width: 70vw;             /* بدل 100vh، العرض يتناسب مع الشاشة */
+  margin: 3.7em auto;
+  padding: 2rem;
+  background-color: #1a0a1f;   /* لون أغمق للهدوء */
+  border-radius: 12px;
+  box-shadow: 0 0 40px rgba(255, 0, 140, 0.6);
+  text-align: center;
+  font-size: 1.25rem;           /* حجم خط الأب: مرن مع rem */
+
+  background-image: radial-gradient(
+    circle,
+    rgba(204, 12, 172, 0.753),   /* ألوان أقل صخبًا */
+    rgba(46, 20, 44, 1)
+  ), 
+
+  linear-gradient(
+    to right top,
+    rgb(55, 2, 55),
+    rgb(95, 0, 85)
+  );
+
+  
+}
+
+.first h2 {
+  color: #ff99ff;               /* أفتح شوي من الوردي */
+  font-size: 1.6em;             /* نسبي للخط الأساسي */
+  padding: 0 0.5em;
+  margin: 0.3em auto;
+  text-shadow: 0 0 8px #ff99ff, 0 0 16px #bb00bb;
+}
+
+.first h3,
+.first p {
+  color: #cc99cc;               /* أفتح شوي من plum */
+  font-size: 1.1em;
+  margin: 0.5em 0;
+}
+/* الفورم */
+.order-form {
+  max-width: 38rem;
+  margin: 3rem auto;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  background: linear-gradient(to bottom, #2e142c, #14000f);
+  box-shadow: 0 0 2.2rem rgba(255, 0, 212, 0.6);
+}
+
+/* مجموعات الحقول */
+.form-group {
+  margin-bottom: 1.3rem;
+  text-align: right;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-weight: bold;
+}
+
+/* الحقول */
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 0.6rem;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+
+  background:
+    radial-gradient(
+      circle at top right,
+      rgba(255, 14, 215, 0.6),
+      transparent 75%
+    ),
+    linear-gradient(
+      to right top,
+      rgb(55, 2, 55),
+      rgb(95, 0, 85)
+    );
+
+  box-shadow: 0 0 1.2rem rgba(255, 0, 212, 0.6);
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  box-shadow: 0 0 2rem rgba(255, 0, 180, 0.9);
+  transform: scale(1.02);
+}
+
+/* قسم الدفع */
+.payment-section {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  border-radius: 1.2rem;
+  background: radial-gradient(circle, rgba(255, 0, 212, 0.384), transparent);
+}
+
+.payment-option {
+  padding: 0.6rem;
+  margin-bottom: 0.6rem;
+  border-radius: 0.8rem;
+  font-size: 1.4rem;
+  transition: 0.3s;
+  text-shadow: 0 0 0.6rem pink;
+}
+
+.payment-option:has(input:checked) {
+  background-image:
+    radial-gradient(circle at top, rgba(255, 0, 212, 0.6), transparent),
+    linear-gradient(to bottom, #2e142c, #1a0a18);
+
+  box-shadow: 0 0 1.2rem #ff00ff;  
+  
+ 
+}
+
+/* أزرار الفورم */
+.form-actions {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.form-actions input {
+  flex: 1;
+  padding: 0.8rem;
+  border-radius: 1rem;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  color: white;
+
+  background: linear-gradient(to right top, #ff00ff, #690659);
+  box-shadow: 0 0 1.2rem #ff00ff;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-actions input:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 2rem #ff4dff;
+}
+
+/* الشكر */
+.thank-you {
+  margin: 3rem 1rem;
+  text-shadow: 0 0 1.2rem #ff00ff;
+}
+
+/* الفوتر */
+.page-footer {
+  padding: 2rem 1rem;
+  background:
+    radial-gradient(circle at top right, rgba(255, 0, 212, 0.5), transparent),
+    linear-gradient(to bottom, #be36b3, #381133);
+
+  box-shadow: 0 0 1.5rem rgba(255, 0, 200, 0.6);
+}
+
+.platform {
+  width: 14rem;
+  transition: transform 0.2s ease;
+}
+
+.platform:hover {
+  transform: scale(1.15);
+}
+nav {
+  background-color: rgb(72, 0, 82);
+  padding: 1rem 0;
+}
+
+/* Navbar Container */
+.links {
+  background-color: rgb(72, 0, 82);
+  padding: 1rem 0;
+  box-shadow: 0 0 15px rgb(187, 3, 104);
+}
+
+/* Navbar List */
+.links ul {
+  list-style: none;          /* إزالة النقاط */
+  display: flex;             /* ترتيب العناصر أفقياً */
+  justify-content: center;   /* توسيط العناصر أفقياً */
+  align-items: center;       /* توسيط العناصر عمودياً */
+  gap: 3.2rem;               /* مسافة بين الروابط */
+  margin: 0;
+  padding: 0;
+  font-size: 1.25rem;        /* حجم الخط نسبي */
+}
+
+/* Navbar Links */
+.links ul li a {
+  color: pink;
+  text-decoration: none;
+  font-size: 1.2em;
+  transition: all 0.3s ease;
+  padding: 0.3rem 0.5rem;
+  border-radius: 15px; 
+  font-weight: bold; 
+  text-shadow: 0 0 30px rgb(255, 197, 207), 0 0 20px purple; 
+  box-shadow: 0 0 20px rgb(187, 20, 159);
+  background-image:
+  radial-gradient(
+    circle to left top,
+    rgba(138, 17, 118, 0.35),
+    transparent
+  ),
+  linear-gradient(
+    to bottom,
+    #750c6d,
+    #9e158c
+  );
+
+}
+
+.links ul li a:hover {
+  background-color: rgba(255, 0, 212, 0.2); /* تأثير خلفية عند hover */
+  box-shadow: 0 0 10px rgb(255, 0, 212);
+  transform: scale(1.05); 
+  
+  background-image:
+  radial-gradient(
+    circle at top,
+    rgba(255, 0, 212, 0.35),
+    transparent
+  ),
+  linear-gradient(
+    to bottom,
+    #2e142c,
+    #1a0a18
+  );
+
+} 
+::selection{ 
+  background-color: #bb00bb; 
+  color: #eee;
+} 
+
